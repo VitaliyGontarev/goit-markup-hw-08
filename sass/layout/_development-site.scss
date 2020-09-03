@@ -1,0 +1,45 @@
+.development-conteiner {
+  margin-bottom: 94px;
+}
+.bloc-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  .person:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.person {
+  position: relative;
+}
+.img-bloc {
+  display: block;
+
+  width: 370px;
+  height: 294px;
+}
+
+.development-first-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

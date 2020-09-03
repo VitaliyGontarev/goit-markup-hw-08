@@ -1,0 +1,46 @@
+.block-filtres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 94px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 34px;
+  padding-top: 0;
+  padding-bottom: 16px;
+
+  text-align: center;
+}
+
+.filtres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f5f4fa;
+  color: $text-title-color;
+
+  margin-right: 8px;
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: background-color, color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+  &:focus,
+  &:hover {
+    background-color: $accent-text;
+    color: $primary-white-color;
+  }
+}

@@ -1,0 +1,40 @@
+.section-head {
+  margin-top: 0;
+  margin-bottom: 94px;
+
+  text-align: center;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/header-min.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-head {
+  width: 696px;
+
+  padding-top: 200px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  color: $primary-white-color;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

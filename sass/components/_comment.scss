@@ -1,0 +1,27 @@
+textarea {
+  resize: none;
+}
+.position-comment {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.text-comment {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.modal-comment {
+  width: 100%;
+
+  padding: 12px 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid $accent-text;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

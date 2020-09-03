@@ -1,0 +1,18 @@
+.button-head {
+  color: #ffffff;
+  background-color: $accent-text;
+
+  display: inline;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+}

@@ -1,0 +1,57 @@
+.features-conteiner {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  display: flex;
+
+  .features-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.icon-benefits {
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding: 25px 100px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.section-title-detalis {
+  color: $text-title-color;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: $text-title-color;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
