@@ -5,6 +5,10 @@
 .flex-conteiner {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .block-flex {

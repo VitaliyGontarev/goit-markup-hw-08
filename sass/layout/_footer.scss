@@ -75,6 +75,15 @@
 .block-link {
   margin-left: 70px;
 }
+.footer-link {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  text-decoration: none;
+}
 
 .title-footer {
   color: $primary-white-color;

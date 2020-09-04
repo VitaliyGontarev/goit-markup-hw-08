@@ -1,13 +1,17 @@
 .features-conteiner {
+  display: flex;
   margin-top: 94px;
   margin-bottom: 94px;
-  display: flex;
 
   .features-item:not(:last-child) {
     margin-right: 30px;
   }
 }
-
+.features {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
 .icon-benefits {
   margin-bottom: 30px;
   margin-top: 0;
