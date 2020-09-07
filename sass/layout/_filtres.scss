@@ -1,7 +1,11 @@
 .block-filtres {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    display: inline;
+  }
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   margin-top: 94px;
   margin-right: auto;
@@ -14,9 +18,9 @@
 }
 
 .filtres {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   background-color: #f5f4fa;
   color: $text-title-color;

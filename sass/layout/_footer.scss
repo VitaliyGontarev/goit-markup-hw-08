@@ -1,11 +1,16 @@
 .footer {
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
   background-color: #2f303a;
 }
-.flex-footer {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+// .flex-footer {
+//   display: flex;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 .block-adress-logo {
   display: block;
 
@@ -13,7 +18,7 @@
   padding: 0;
 }
 .webstudio {
-  display: inline-block;
+  // display: inline-block;
   margin-right: 0;
   margin-bottom: 20px;
 }
@@ -122,30 +127,30 @@
   fill: #ffffff;
   padding: 12px 12px;
 }
-.button-stile {
-  display: flex;
-  align-items: center;
+// .button-stile {
+//   display: flex;
+//   align-items: center;
 
-  list-style: none;
-  text-decoration: none;
+//   list-style: none;
+//   text-decoration: none;
 
-  margin: 0;
-  padding: 0;
-}
-.form {
-  width: 570px;
-  margin-left: 93px;
-}
+//   margin: 0;
+//   padding: 0;
+// }
+// .form {
+//   width: 570px;
+//   margin-left: 93px;
+// }
 
-.form-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .form-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
 .input-footer {
   display: flex;
-  width: 358px;
+  width: 100%;
 
   padding-top: 15px;
   padding-bottom: 15px;

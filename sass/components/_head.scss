@@ -1,12 +1,19 @@
 .section-head {
+  outline: 2px solid tomato;
+
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 
   text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 }
+
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  // max-width: 1600px;
+  // height: 600px;
   margin-right: auto;
   margin-left: auto;
 
@@ -18,23 +25,34 @@
     url(../img/header-min.jpg);
   background-position: center;
   background-size: cover;
+  background-color: aqua;
 }
-
 .title-head {
-  width: 696px;
+  // width: 696px;
+  outline: 2px solid tomato;
 
-  padding-top: 200px;
+  padding-top: 118px;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 
   color: $primary-white-color;
-
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  // font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+    font-size: 44px;
+    padding-top: 200px;
+  }
 }
