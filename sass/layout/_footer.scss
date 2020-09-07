@@ -1,9 +1,7 @@
 .footer {
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: #2f303a;
 }
 // .flex-footer {
@@ -12,15 +10,21 @@
 //   padding-bottom: 60px;
 // }
 .block-adress-logo {
-  display: block;
+  display: inline-block;
 
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
 }
 .webstudio {
   // display: inline-block;
   margin-right: 0;
   margin-bottom: 20px;
+
+  @include for-size(tablet-portrait) {
+    margin-left: 163px;
+    margin-right: 163px;
+    margin-top: 60px;
+  }
 }
 .footer-logo {
   color: $accent-text;
@@ -50,6 +54,10 @@
   display: inline-block;
   margin-top: 0;
   margin-bottom: 9px;
+
+  @include for-size(tablet-portrait) {
+    text-align: center;
+  }
 }
 .second-link {
   display: inline-block;
@@ -63,6 +71,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  @include for-size(tablet-portrait) {
+    margin-left: 124px;
+    margin-right: 124px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 .adress-link {
   color: #acacb0;
@@ -78,7 +93,10 @@
 }
 
 .block-link {
-  margin-left: 70px;
+  // margin-left: 70px;
+  @include for-size(tablet-portrait) {
+    text-align: center;
+  }
 }
 .footer-link {
   display: flex;
@@ -88,6 +106,10 @@
 
   list-style: none;
   text-decoration: none;
+  @include for-size(tablet-portrait) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .title-footer {
@@ -100,6 +122,11 @@
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+
+  // @include for-size(tablet-portrait) {
+  //   margin-left: 167px;
+  //   margin-right: 167px;
+  // }
 }
 
 .bacground-icon {
@@ -137,10 +164,13 @@
 //   margin: 0;
 //   padding: 0;
 // }
-// .form {
-//   width: 570px;
-//   margin-left: 93px;
-// }
+.form {
+  @include for-size(tablet-portrait) {
+    text-align: center;
+  }
+  // width: 570px;
+  // margin-left: 93px;
+}
 
 // .form-footer {
 //   display: flex;
@@ -168,9 +198,13 @@
 
   color: #acacb0;
   background-color: #2f303a;
+
+  @include for-size(tablet-portrait) {
+    margin-bottom: 20px;
+  }
 }
 .submit-footer {
-  display: flex;
+  display: inline-flex;
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -188,6 +222,12 @@
   border: 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @include for-size(tablet-portrait) {
+    margin-bottom: 60px;
+    margin: 0;
+    justify-content: center;
+  }
 }
 .icon-send {
   display: flex;
