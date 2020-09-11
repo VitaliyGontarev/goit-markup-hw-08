@@ -1,0 +1,27 @@
+.logo {
+  @include for-size(tablet-portrait) {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @include for-size(tablet-landscape) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include for-size(desktop) {
+    padding: 0;
+  }
+  color: #000000;
+
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo .pat {
+  color: $accent-text;
+}

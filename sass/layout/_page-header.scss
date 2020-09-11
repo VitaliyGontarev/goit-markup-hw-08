@@ -1,12 +1,6 @@
 .conteiner {
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  //   outline: 1px solid red;
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
   width: 100%;
-  outline: 1px solid tomato;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -25,74 +19,40 @@
   }
 }
 .border-head {
-  //   @media screen and (min-width: 480px) {
-  //     width: 480px;
-  //   }
-  //   // width: 1600px;
+  max-width: 1600px;
   margin-top: 0;
   border-bottom: 1px solid #ececec;
-
-  @include for-size(tablet-portrait) {
-    width: 480px;
-    margin-top: 0;
-    border-bottom: 1px solid #ececec;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 768px;
-    margin-top: 0;
-    border-bottom: 1px solid #ececec;
-  }
-
-  @include for-size(desktop) {
-    width: 1200px;
-    margin-top: 0;
-    border-bottom: 1px solid #ececec;
-  }
 }
 
-/* nav*/
-
-// .conteiner-nav {
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-// }
-.main-nav {
-  padding-top: 16px;
-  padding-bottom: 16px;
-
+.conteiner-nav {
   @include for-size(tablet-landscape) {
-    width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    display: flex;
   }
-
   @include for-size(desktop) {
-    width: 1200px;
+    display: flex;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
   }
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
-
-.logo {
-  color: #000000;
-
-  font-family: "Raleway", sans-serif;
-
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.logo .pat {
-  color: $accent-text;
+.main-nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include for-size(tablet-portrait) {
+    display: none;
+    // display: flex;
+    // justify-content: center;
+  }
+  @include for-size(tablet-landscape) {
+    display: inline-flex;
+  }
+  @include for-size(desktop) {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 0;
+    margin-left: 93px;
+  }
 }
 
 .link {
@@ -109,9 +69,17 @@
 }
 
 .site-nav {
-  // display: none;
-  // display: flex;
-  // margin-left: 85px;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    margin-left: 85px;
+    padding: 0;
+  }
+  @include for-size(desktop) {
+    margin-left: 85px;
+    margin: 0;
+    padding: 0;
+  }
+
   list-style: none;
   text-decoration: none;
 
@@ -125,6 +93,9 @@
 }
 
 .current::before {
+  @include for-size(tablet-landscape) {
+    bottom: -33px;
+  }
   content: "";
   position: absolute;
   width: 100%;
@@ -142,9 +113,38 @@
   margin: 0;
 }
 .item-link {
+  @include for-size(tablet-landscape) {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   display: inline-flex;
   align-items: center;
   fill: $main-text-color;
+
+  &:focus,
+  &:hover {
+    fill: $accent-text;
+    color: $accent-text;
+  }
+}
+.link-contact {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $main-text-color;
+  text-decoration: none;
+  position: relative;
+  transition: color, fill;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
@@ -166,26 +166,32 @@
 }
 
 .page-contacts {
-  display: flex;
-
-  align-items: center;
-  margin-left: auto;
-}
-.contacts-nav {
-  display: none;
-  // display: flex;
-  // align-items: center;
-
-  .item-link:not(:last-child) {
-    margin-right: 30px;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
   }
 }
 
-.contacts-nav .link {
-  color: #757575;
+.contacts-nav {
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  &:focus,
-  &:hover {
-    color: $accent-text;
+    padding: 0;
+    margin: 0;
+    margin-left: 84px;
+  }
+  @include for-size(desktop) {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    .item-link:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

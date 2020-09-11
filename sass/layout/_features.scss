@@ -1,34 +1,72 @@
 .features-conteiner {
-  // display: flex;
-  // margin-top: 94px;
-  // margin-bottom: 94px;
-
-  // .features-item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @include for-size(tablet-portrait) {
+    margin-bottom: 60px;
+  }
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 }
 .features {
-  // @media screen and (min-width: 480px) {
-  //   display: inline-block;
-  //   padding: 0;
-  //   margin: 0;
-  //   margin-bottom: 30px;
-  // }
-  // display: flex;
-
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    display: inline-flex;
+  }
+  margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
 .features-item {
-  margin-bottom: 30px;
+  @include for-size(tablet-portrait) {
+    margin-bottom: 30px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    display: table-cell;
+    width: calc((100% - 30px) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    &:nth-child(even) {
+      margin-bottom: 0;
+    }
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
 }
-.features-item:nth-child(4) {
-  margin-bottom: 0;
-}
+
 .icon-benefits {
   display: block;
-  outline: 1px solid red;
+
   margin-bottom: 30px;
   margin-top: 0;
   padding: 25px 100px;
@@ -41,11 +79,13 @@
 }
 
 .section-title-detalis {
-  // @media screen and (min-width: 480px) {
-  //   display: inline-block;
-  //   width: 480px;
-  //   text-align: center;
-  // }
+  @include for-size(tablet-landscape) {
+    line-height: 1.14;
+  }
+  @include for-size(desktop) {
+    text-align: start;
+  }
+
   color: $text-title-color;
 
   font-style: normal;
@@ -58,10 +98,6 @@
 
   margin-top: 0;
   margin-bottom: 10px;
-
-  @include for-size(tablet-landscape) {
-    text-align: start;
-  }
 }
 
 .section-title {
@@ -76,7 +112,7 @@
 
   color: $text-title-color;
 
-  @include for-size(tablet-landscape) {
+  @include for-size(tablet-portrait) {
     margin-bottom: 30px;
   }
   @include for-size(desktop) {
@@ -93,4 +129,8 @@
 
   margin-top: 0;
   margin-bottom: 0;
+
+  @include for-size(tablet-landscape) {
+    line-height: 1.71;
+  }
 }

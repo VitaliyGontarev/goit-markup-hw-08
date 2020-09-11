@@ -1,9 +1,6 @@
 .section-head {
-  outline: 2px solid tomato;
-
   margin-top: 0;
   margin-bottom: 60px;
-
   text-align: center;
 
   @include for-size(desktop) {
@@ -12,7 +9,7 @@
 }
 
 .overlay {
-  // max-width: 1600px;
+  max-width: 1600px;
   // height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -29,7 +26,6 @@
 }
 .title-head {
   // width: 696px;
-  outline: 2px solid tomato;
 
   padding-top: 118px;
   margin-top: 0;
@@ -40,19 +36,15 @@
   color: $primary-white-color;
   font-weight: 900;
   font-size: 26px;
-  // font-size: 44px;
-  line-height: 1.36;
+
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @include for-size(tablet-landscape) {
-    width: 768px;
-  }
-
   @include for-size(desktop) {
-    width: 1200px;
     font-size: 44px;
+    line-height: 1.36;
     padding-top: 200px;
   }
 }

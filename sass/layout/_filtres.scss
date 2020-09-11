@@ -1,22 +1,28 @@
 .block-filtres {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  margin-top: 94px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 34px;
-  padding-top: 0;
-  padding-bottom: 16px;
-
-  text-align: center;
+  @include for-size(tablet-portrait) {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  @include for-size(tablet-landscape) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-top: 94px;
+    margin-bottom: 34px;
+  }
 }
 
 .filtres {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  @include for-size(tablet-portrait) {
+    margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+    @include for-size(tablet-landscape) {
+      margin-bottom: 0;
+    }
+  }
 
   background-color: #f5f4fa;
   color: $text-title-color;

@@ -1,4 +1,7 @@
 .button-head {
+  @include for-size(tablet-portrait) {
+    margin-bottom: 118px;
+  }
   display: inline;
 
   color: #ffffff;

@@ -1,6 +1,11 @@
 .development-conteiner {
-  display: none;
-  margin-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 }
 .bloc-item {
   display: flex;
