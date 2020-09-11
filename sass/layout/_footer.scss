@@ -6,6 +6,10 @@
 }
 
 .flex-footer {
+  @include for-size(phone-only) {
+    display: block;
+  }
+
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +21,12 @@
 }
 .block-adress-logo {
   display: inline-block;
+  @include for-size(phone-only) {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
   @include for-size(tablet-portrait) {
     display: block;
     text-align: center;
@@ -94,6 +104,9 @@
 }
 
 .block-link {
+  @include for-size(phone-only) {
+    text-align: center;
+  }
   @include for-size(tablet-portrait) {
     text-align: center;
   }
@@ -117,6 +130,10 @@
 
   list-style: none;
   text-decoration: none;
+  @include for-size(phone-only) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 
   @include for-size(tablet-portrait) {
     justify-content: center;
@@ -177,6 +194,9 @@
   }
 }
 .form {
+  @include for-size(phone-only) {
+    text-align: center;
+  }
   @include for-size(tablet-portrait) {
     text-align: center;
   }
@@ -226,6 +246,9 @@
 
   color: #acacb0;
   background-color: #2f303a;
+  @include for-size(phone-only) {
+    margin-bottom: 20px;
+  }
 
   @include for-size(tablet-portrait) {
     margin-bottom: 20px;
@@ -253,6 +276,10 @@
   border: 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @include for-size(phone-only) {
+    margin-bottom: 60px;
+  }
 
   @include for-size(tablet-portrait) {
     margin-bottom: 60px;

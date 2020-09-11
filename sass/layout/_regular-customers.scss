@@ -1,6 +1,10 @@
 .section-customers {
   width: 100%;
 
+  @include for-size(phone-only) {
+    margin-bottom: 60px;
+  }
+
   @include for-size(tablet-portrait) {
     display: block;
     margin-bottom: 60px;
@@ -15,6 +19,12 @@
 
   padding: 0;
   margin: 0;
+  @include for-size(phone-only) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+  }
 
   @include for-size(tablet-portrait) {
     display: flex;
@@ -33,7 +43,16 @@
   }
 }
 .client {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
     &:not(:nth-child(2n)) {
       margin-right: 30px;

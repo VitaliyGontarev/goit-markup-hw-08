@@ -1,4 +1,7 @@
 .button-head {
+  @include for-size(phone-only) {
+    margin-bottom: 118px;
+  }
   @include for-size(tablet-portrait) {
     margin-bottom: 118px;
   }
