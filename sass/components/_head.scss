@@ -36,7 +36,7 @@
       ),
       url("../../img/header/head-mob@2x.jpg");
   }
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -55,7 +55,7 @@
         url("../../img/header/header-tab@2x-min.jpg");
     }
   }
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
