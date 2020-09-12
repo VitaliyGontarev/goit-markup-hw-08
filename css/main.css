@@ -618,9 +618,9 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -716,10 +716,11 @@ img {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/header/header-mob-min.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/header/header-mob-min.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/header/head-mobile480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/header/head-mobile480.jpg");
   background-position: center;
   background-size: cover;
+  background-color: gray;
 }
 
 @media screen and (min-width: 1200px) {
