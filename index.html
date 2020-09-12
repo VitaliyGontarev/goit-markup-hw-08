@@ -29,26 +29,26 @@
             <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <!-- <div class="page-contacts"> -->
-        <ul class="contacts-nav">
-          <li class="item-link">
-            <a class="link-contact" href="mailto:info@devstudio.com">
-              <svg class="icon-email" style="width: 16; height: 11">
-                <use href="./img/symbol-defs.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item-link">
-            <a class="link-contact" href="tel:+380961111111">
-              <svg class="icon-smartphone" style="width: 10; height: 15">
-                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-        </ul>
-        <!-- </div> -->
+        <div class="page-contacts">
+          <ul class="contacts-nav">
+            <li class="item-link">
+              <a class="link-contact" href="mailto:info@devstudio.com">
+                <svg class="icon-email" style="width: 16; height: 11">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item-link">
+              <a class="link-contact" href="tel:+380961111111">
+                <svg class="icon-smartphone" style="width: 10; height: 15">
+                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +380961111111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -132,33 +132,62 @@
           <ul class="bloc-item">
             <li class="person">
               <span class="img-bloc">
-                <img
-                  src="./img/box1.jpg"
-                  alt="noutbook"
-                  width="370"
-                  height="294"
-              /></span>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/develop/dev.jpg    1x,
+                      ./img/develop/dev@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)
+                    "
+                  />
+                  <img
+                    src="./img/box1.jpg"
+                    alt="noutbook"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+              </span>
               <p class="development-first-text">Десктопные приложения</p>
             </li>
             <li class="person">
               <span class="img-bloc">
-                <img
-                  src="./img/box2.jpg"
-                  alt="mobile"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/develop/dev2.jpg    1x,
+                      ./img/develop/dev2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/box2.jpg"
+                    alt="mobile"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               </span>
               <p class="development-first-text">Мобильные приложения</p>
             </li>
             <li class="person">
               <span class="img-bloc">
-                <img
-                  src="./img/box3.jpg"
-                  alt="manitor"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/develop/dev3.jpg    1x,
+                      ./img/develop/dev3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/box3.jpg"
+                    alt="manitor"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               </span>
               <p class="development-first-text">Дизайнерские решения</p>
             </li>
@@ -173,7 +202,30 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="bloc-team">
             <li class="team">
-              <img src="./img/demynenko.jpg" alt="foto" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/t-d1-min.jpg   1x,
+                    ./img/team/t-d@3x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-tab1-min.jpg   1x,
+                    ./img/team/team-tab@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-mob1-min.jpg   1x,
+                    ./img/team/team-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="./img/demynenko.jpg" alt="foto" width="270" />
+              </picture>
 
               <h3 class="title-team">Игорь Демьяненко</h3>
               <p class="profile">Product Designer</p>
@@ -234,7 +286,32 @@
             </li>
 
             <li class="team">
-              <img src="./img/repina.jpg" alt="foto" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/t-d2-min.jpg    1x,
+                    ./img/team/t-d2@3x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-tab2-min.jpg    1x,
+                    ./img/team/team-tab2@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-mob2-min.jpg    1x,
+                    ./img/team/team-mob2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./img/repina.jpg" alt="foto" width="270" />
+              </picture>
+
               <h3 class="title-team">Ольга Репина</h3>
               <p class="profile">Frontend Developer</p>
               <ul class="button-link">
@@ -294,7 +371,31 @@
             </li>
 
             <li class="team">
-              <img src="./img/tarasov.jpg" alt="foto" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/t-d3-min.jpg    1x,
+                    ./img/team/t-d3@3x-min.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-tab3-min.jpg    1x,
+                    ./img/team/team-tab3@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-mob3-min.jpg    1x,
+                    ./img/team/team-mob3@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px"
+                />
+                <img src="./img/tarasov.jpg" alt="foto" width="270" />
+              </picture>
+
               <h3 class="title-team">Николай Тарасов</h3>
               <p class="profile">Marketing</p>
               <ul class="button-link">
@@ -354,7 +455,31 @@
             </li>
 
             <li class="team">
-              <img src="./img/ermakov.jpg" alt="foto" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/t-d4-min.jpg    1x,
+                    ./img/team/t-d4@3x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-tab4-min.jpg    1x,
+                    ./img/team/team-tab4@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team-mob4-min.jpg   1x,
+                    ./img/team/team-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./img/ermakov.jpg" alt="foto" width="270" />
+              </picture>
+
               <h3 class="title-team">Михаил Ермаков</h3>
               <p class="profile">UI Designer</p>
               <ul class="button-link">
@@ -620,6 +745,7 @@
         </button>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

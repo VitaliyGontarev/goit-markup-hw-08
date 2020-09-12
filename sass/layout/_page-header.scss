@@ -40,6 +40,9 @@
   }
 }
 .main-nav {
+  @media screen and (max-width: 677px) {
+    display: none;
+  }
   padding-top: 16px;
   padding-bottom: 16px;
   @include for-size(tablet-portrait) {
@@ -178,6 +181,10 @@
 }
 
 .contacts-nav {
+  @media screen and (max-width: 677px) {
+    display: none;
+  }
+
   @include for-size(tablet-portrait) {
     display: none;
   }
