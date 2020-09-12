@@ -40,9 +40,9 @@
   }
 }
 .main-nav {
-  @media screen and (max-width: 677px) {
-    display: none;
-  }
+  // @media screen and (max-width: 677px) {
+  //   display: none;
+  // }
   padding-top: 16px;
   padding-bottom: 16px;
   @include for-size(tablet-portrait) {
@@ -140,6 +140,7 @@
 }
 .link-contact {
   display: inline-flex;
+
   align-items: center;
   font-weight: 500;
   font-size: 12px;
@@ -181,9 +182,9 @@
 }
 
 .contacts-nav {
-  @media screen and (max-width: 677px) {
-    display: none;
-  }
+  // @media screen and (max-width: 677px) {
+  //   display: none;
+  // }
 
   @include for-size(tablet-portrait) {
     display: none;
