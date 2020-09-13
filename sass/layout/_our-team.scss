@@ -25,12 +25,13 @@
   text-decoration: none;
 }
 .team {
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   @include for-size(tablet-landscape) {
     width: calc((100% - 30px) / 2);
     &:not(:nth-child(2n)) {

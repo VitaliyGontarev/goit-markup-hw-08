@@ -1,6 +1,12 @@
 .logo {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   @include for-size(tablet-portrait) {
-    display: block;
+    display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px;
   }
