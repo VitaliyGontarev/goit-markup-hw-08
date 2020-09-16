@@ -35,6 +35,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../../img/header/head-mob@2x.jpg");
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/header/head-mob@2x.webp");
+    background-position: center;
+    background-size: cover;
+    background-color: gray;
   }
   @include for-size(tablet-landscape) {
     background-image: linear-gradient(
@@ -53,6 +63,13 @@
           rgba(47, 48, 58, 0.4)
         ),
         url("../../img/header/header-tab@2x-min.jpg");
+
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../img/header/Header-tab-min.webp");
     }
   }
   @include for-size(desktop) {
@@ -63,6 +80,13 @@
       ),
       url("../../img/header/head-desc-min.jpg");
 
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/header/head-desc-min.webp");
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -72,6 +96,13 @@
           rgba(47, 48, 58, 0.4)
         ),
         url("../../img/header/header-desc@2x-min.jpg");
+
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../img/header/head-mob@2x.webp");
     }
   }
 }
