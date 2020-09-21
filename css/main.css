@@ -545,6 +545,12 @@ img {
   margin-right: auto;
 }
 
+@media (max-width: 479px) {
+  .conteiner {
+    min-width: 320px;
+  }
+}
+
 @media (min-width: 480px) {
   .conteiner {
     width: 480px;
@@ -564,7 +570,7 @@ img {
 }
 
 .border-head {
-  max-width: 1600px;
+  max-width: 1680px;
   margin-top: 0;
   border-bottom: 1px solid #ececec;
 }
@@ -908,8 +914,8 @@ img {
   background-position: center;
   background-size: cover;
   background-color: gray;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/header/head-mob480.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header/head-mob480.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/header/head-mob480.webp);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header/head-mob480.webp);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -1981,66 +1987,73 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 221px 536px;
+  }
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 767px) {
-  .backdrop {
-    margin: 94px 15px 94px 15px;
-    overflow-y: scroll;
-  }
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
+          transform: translate(-50%, -50%) rotate(360deg);
 }
 
 .modal {
   position: absolute;
-  top: 40%;
-  left: 40%;
-  -webkit-transform: translate(-40%, -40%);
-          transform: translate(-40%, -40%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
-  width: 100%;
-  max-height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    max-width: 450px;
+    width: 100%;
     max-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    height: 581px;
+    width: 528px;
   }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .close-type {
@@ -2236,6 +2249,10 @@ textarea {
 }
 
 .submit-modal {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 55px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -2246,18 +2263,5 @@ textarea {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  position: absolute;
-  padding: 10px 51px;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.submit-modal:hover, .submit-modal:focus {
-  background-color: #ffffff;
-  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

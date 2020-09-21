@@ -545,6 +545,12 @@ img {
   margin-right: auto;
 }
 
+@media (max-width: 479px) {
+  .conteiner {
+    min-width: 320px;
+  }
+}
+
 @media (min-width: 480px) {
   .conteiner {
     width: 480px;
@@ -564,7 +570,7 @@ img {
 }
 
 .border-head {
-  max-width: 1600px;
+  max-width: 1680px;
   margin-top: 0;
   border-bottom: 1px solid #ececec;
 }
